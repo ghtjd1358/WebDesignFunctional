@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 레이아웃 B-1~5</title>
+</head>
+<style>
+    /* setting */
+    *{
+        margin: 0;height: 0;
+    }
+    #wrap{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #ccc;
+    }
+    /* header */
+    #header{
+        width: 100%;
+        height: 100px;
+        background-color: antiquewhite;
+    }
+
+    .header_container{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        /* border: 1px solid rebeccapurple; */
+    }
+
+    .logo{
+        width: 20%;
+        height: 100%;
+        background-color: greenyellow;
+    }
+    .nav{
+        width: 80%;
+        height: 100%;
+        background-color: rebeccapurple;
+    }
+    /* articel */
+    #slider{
+        width: 100%;
+        height: 300px;
+        background-color: tomato;
+    }
+    .slider_container{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        background-color: azure;
+    }
+
+    /* content */
+    #contents{
+        width: 100%;
+        height: 200px;
+        background-color: skyblue;
+    }
+    .contents_container{
+        width: 1200px;
+        height: 100%;
+        background-color: beige;
+        margin: 0 auto;
+        display: flex;
+    }
+    .cont{
+        width: 33.3333%;
+        height: 100%;
+        background-color: black;
+    }
+    .cont:nth-child(2){
+        background-color: aquamarine;
+    }
+    .cont:nth-child(3){
+        background-color: red;
+    }
+    /* footer */
+    #footer{
+        width: 100%;
+        height: 100px;
+        background-color: violet;
+    }
+    .footer_container{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        background-color: whitesmoke;
+    }
+    .foot1{
+        width: 20%;
+        height: 100%;
+    }
+    .foot2{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: brown;
+    }
+    .foo1{
+        width: 100%;
+        height: 100%;
+        background-color: rebeccapurple;
+    }
+    .foo2{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_container">                
+                <div class="logo"></div>
+                <nav class="nav"></nav>
+            </div>
+        </header>
+        <article id="slider">
+            <div class="slider_container"></div>
+        </article>
+        <main id="contents">
+            <div class="contents_container">
+                <section class="cont content1"></section>
+                <section class="cont content2"></section>
+                <section class="cont content3"></section>
+            </div>
+        </main>
+        <footer id="footer">
+            <div class="footer_container">
+                <div class="foot1"></div>
+                <div class="foot2">
+                    <div class="foo1"></div>
+                    <div class="foo2"></div>
+                </div>
+            </div>
+          
+        </footer>
+    </div>    
+</body>
+</html>

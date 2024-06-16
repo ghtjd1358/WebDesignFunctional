@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사2~4</title>
+</head>
+<style>
+    *{
+        margin : 0;
+        padding : 0;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    #wrap{
+        width: 1200px;
+        height: 700px;
+        margin: auto;
+        /* border: 1px solid black; */
+    }
+    #header{
+        width: 100%;
+        height: 100px;
+        background-color: #ccc;
+    }
+    .logo{
+        width: 240px;
+        height: 100%;
+        background-color: black;
+    }
+
+    #slider{
+        width: 100%;
+        height: 300px;
+        background-color: blue;
+    }
+    #contents{
+        width: 100%;
+        height: 200px;
+        background-color: red;
+        display: flex;
+    }
+    .content1{
+        width: 400px;
+        background-color: yellow;
+        float: left;
+    }
+    .content2{
+        width: 400px;
+        background-color: skyblue;
+    }
+    #footer{
+        width: 100%;
+        height: 100px;
+        background-color: green;
+        display: flex;
+        justify-content: space-between;
+    }
+    .foot2{
+        width: 720px;
+        height: 100%;
+        background-color: orange;
+        display: flex;
+        flex-direction: column;    
+    }
+    .foo1{
+        width: 100%;
+        height: 50%;
+        background-color: turquoise;
+    }
+    .foo2{
+        width: 100%;
+        height: 50%;
+        background-color: tomato;
+    }
+</style>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1>logo</h1>
+            <nav id="nav"></nav>
+        </header>
+        <article id="slider"></article>
+        <main id="contents">
+            <section class="section1"></section>
+            <section class="section2"></section>
+            <section class="section3"></section>
+        </main>
+        <footer id="footer">
+            <div class="foot1"></div>
+            <div class="foot2">
+                <div class="foo1"></div>
+                <div class="foo2"></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
